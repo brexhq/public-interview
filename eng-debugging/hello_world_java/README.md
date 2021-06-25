@@ -1,11 +1,18 @@
-### Setup
-1. If you don't have JDK 8+ installed, run `brew cask install adoptopenjdk8`/`sudo apt-get install openjdk-8-jre`/`sudo yum install java-1.8.0-openjdk-devel`. Verify using `java -version`. If you get an error `Error: Cask 'adoptopenjdk8' is unavailable: No Cask with this name exists.`, first run `brew update` followed by `brew tap adoptopenjdk/openjdk` (more on mac installation [here](https://mkyong.com/java/how-to-install-java-on-mac-osx/))
-2. Install Maven using `brew install maven`/`sudo apt install maven`/`sudo yum install maven`. Verify using `mvn -version`.
-3. run `mvn install` inside this folder. This will run the tests too.
-4. run `mvn test` to run all unit tests.
-5. You can use a Java IDE of your choice to run and debug the tests.
+## Setup
+1. If you don't have Java installed, visit https://java.com/en/download/help/download_options.html.
+2. Cd into `hello_world_java` folder
+3. run `mvn test`
 
----------------------------------------
+## IDE support
+If you are solving this exercise in your own environment, you are welcome to use an IDE. You should be able to import this as a Maven project according to your IDE's specific implementation.
+
+## Commands
+- `mvn test` To run all tests
+- `mvn test -Dtest=HelloWorldTest#testCase1` To run just first test
+
+## Tested on
+Java 1.8, 11, 15, 16
+Maven 3.8.1
 
 #### IDE/Windows-specific bugs (skip unless you're having problems on Windows or with your IDE):
 Make sure you have completed setup before proceeding!
