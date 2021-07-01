@@ -1,7 +1,8 @@
 ## Setup
 1. If you don't have Java installed, visit https://java.com/en/download/help/download_options.html.
 2. Cd into `hello_world_java` folder
-3. run `mvn test`
+3. run `gradle cleanTest test`
+4. (for maven) run `mvn test`
 
 ## IDE support
 If you are solving this exercise in your own environment, you are welcome to use an IDE. You should be able to import this as a Maven project according to your IDE's specific implementation.
@@ -10,9 +11,12 @@ If you are solving this exercise in your own environment, you are welcome to use
 - `mvn test` To run all tests
 - `mvn test -Dtest=HelloWorldTest#testCase1` To run just first test
 
+If you are using gradle,
+- gradle cleanTest test
+
 ## Tested on
 Java 1.8, 11, 15, 16
-Maven 3.8.1
+gradle or ( Maven 3.8.1 )
 
 #### IDE/Windows-specific bugs (skip unless you're having problems on Windows or with your IDE):
 Make sure you have completed setup before proceeding!
